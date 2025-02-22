@@ -1,0 +1,17 @@
+my_array = [64, 34, 25, 12, 22, 11, 90, 5];
+
+let lenAr = my_array.length;
+let swap = false
+for(let i = 0; i < lenAr - 1; i++){
+  for (let j = 0; j < lenAr - 1; j++) {
+    if(my_array[j] >my_array[j+1]){
+      let temp = my_array[j];
+      my_array[j] = my_array[j+1]
+      my_array[j+1] = temp
+      swap = true
+    } 
+    if(swap === false){
+      break;
+    }
+  }
+}
